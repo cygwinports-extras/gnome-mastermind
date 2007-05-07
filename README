@@ -4,11 +4,11 @@ A Mastermind clone for GNOME Desktop
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.16.0-1
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gtk2-x11-2.10.9-1
-  libcairo2-1.2.6-1
+  GConf2-2.16.1-1
+  gdk-pixbuf2-2.10.11-1
+  glib2-2.12.11-1
+  gtk2-x11-2.10.11-1
+  libcairo2-1.4.6-1
   libintl8-0.15-1
 
 Build requirements:
@@ -35,37 +35,87 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-mastermind-0.1-X-src.tar.bz2
+  unpack gnome-mastermind-0.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-mastermind-0.1-X.cygport all
+  cygport ./gnome-mastermind-0.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-mastermind-0.1-X-src.tar.bz2
-  /usr/src/gnome-mastermind-0.1-X.tar.bz2
+  /usr/src/gnome-mastermind-0.2-X-src.tar.bz2
+  /usr/src/gnome-mastermind-0.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /etc/postinstall/gnome-mastermind.sh
+  /etc/preremove/gnome-mastermind.sh
   /usr/bin/gnome-mastermind.exe
-  /usr/share/doc/Cygwin/gnome-mastermind-0.1.README
-  /usr/share/doc/gnome-mastermind-0.1/ABOUT-NLS
-  /usr/share/doc/gnome-mastermind-0.1/AUTHORS
-  /usr/share/doc/gnome-mastermind-0.1/COPYING
-  /usr/share/doc/gnome-mastermind-0.1/ChangeLog
-  /usr/share/doc/gnome-mastermind-0.1/TODO
-  /usr/share/doc/gnome-mastermind-0.1/copyright
-  /usr/share/doc/gnome-mastermind-0.1/copyright-artwork
+  /usr/share/applications/gnome-mastermind.desktop
+  /usr/share/doc/Cygwin/gnome-mastermind-0.2.README
+  /usr/share/doc/gnome-mastermind-0.2/ABOUT-NLS
+  /usr/share/doc/gnome-mastermind-0.2/AUTHORS
+  /usr/share/doc/gnome-mastermind-0.2/COPYING
+  /usr/share/doc/gnome-mastermind-0.2/COPYRIGHT
+  /usr/share/doc/gnome-mastermind-0.2/ChangeLog
+  /usr/share/doc/gnome-mastermind-0.2/INSTALL
+  /usr/share/doc/gnome-mastermind-0.2/NEWS
+  /usr/share/doc/gnome-mastermind-0.2/README
+  /usr/share/doc/gnome-mastermind-0.2/TODO
+  /usr/share/doc/gnome-mastermind-0.2/copyright-artwork
   /usr/share/gnome-mastermind/themes/simple.svg
   /usr/share/gnome-mastermind/themes/star.svg
+  /usr/share/gnome-mastermind/themes/tango.svg
   /usr/share/gnome-mastermind/ui/ui.xml
+  /usr/share/gnome/help/gnome-mastermind/C/figures/mainwindow.png
+  /usr/share/gnome/help/gnome-mastermind/C/figures/row1.png
+  /usr/share/gnome/help/gnome-mastermind/C/figures/row2.png
+  /usr/share/gnome/help/gnome-mastermind/C/figures/row3.png
+  /usr/share/gnome/help/gnome-mastermind/C/figures/row4.png
+  /usr/share/gnome/help/gnome-mastermind/C/figures/row5.png
+  /usr/share/gnome/help/gnome-mastermind/C/gnome-mastermind.xml
+  /usr/share/gnome/help/gnome-mastermind/C/legal.xml
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/mainwindow.png
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/row1.png
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/row2.png
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/row3.png
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/row4.png
+  /usr/share/gnome/help/gnome-mastermind/fr/figures/row5.png
+  /usr/share/gnome/help/gnome-mastermind/fr/gnome-mastermind.xml
+  /usr/share/gnome/help/gnome-mastermind/fr/legal.xml
+  /usr/share/gnome/help/gnome-mastermind/it/figures/mainwindow.png
+  /usr/share/gnome/help/gnome-mastermind/it/figures/row1.png
+  /usr/share/gnome/help/gnome-mastermind/it/figures/row2.png
+  /usr/share/gnome/help/gnome-mastermind/it/figures/row3.png
+  /usr/share/gnome/help/gnome-mastermind/it/figures/row4.png
+  /usr/share/gnome/help/gnome-mastermind/it/figures/row5.png
+  /usr/share/gnome/help/gnome-mastermind/it/gnome-mastermind.xml
+  /usr/share/gnome/help/gnome-mastermind/it/legal.xml
+  /usr/share/icons/hicolor/16x16/apps/gnome-mastermind.png
+  /usr/share/icons/hicolor/16x16/apps/gnome-mastermind.svg
+  /usr/share/icons/hicolor/22x22/apps/gnome-mastermind.png
+  /usr/share/icons/hicolor/22x22/apps/gnome-mastermind.svg
+  /usr/share/icons/hicolor/32x32/apps/gnome-mastermind.png
+  /usr/share/icons/hicolor/32x32/apps/gnome-mastermind.svg
+  /usr/share/icons/hicolor/48x48/apps/gnome-mastermind.svg
+  /usr/share/icons/hicolor/scalable/apps/gnome-mastermind.svg
+  /usr/share/locale/de/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/omf/gnome-mastermind/gnome-mastermind-C.omf
+  /usr/share/omf/gnome-mastermind/gnome-mastermind-fr.omf
+  /usr/share/omf/gnome-mastermind/gnome-mastermind-it.omf
+  /usr/share/pixmaps/gnome-mastermind.svg
 
 ------------------
 
 Port Notes:
+
+----- version 0.2-1 -----
+Version bump.
 
 ----- version 0.1-1 -----
 Initial release for Cygwin.
