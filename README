@@ -5,9 +5,9 @@ A Mastermind clone for GNOME Desktop
 Runtime requirements:
   cygwin-1.5.24-2
   GConf2-2.16.1-1
-  gdk-pixbuf2-2.10.11-1
-  glib2-2.12.11-1
-  gtk2-x11-2.10.11-1
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
   libcairo2-1.4.6-1
   libintl8-0.15-1
 
@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-mastermind-0.2-X-src.tar.bz2
+  unpack gnome-mastermind-0.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-mastermind-0.2-X.cygport all
+  cygport ./gnome-mastermind-0.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-mastermind-0.2-X-src.tar.bz2
-  /usr/src/gnome-mastermind-0.2-X.tar.bz2
+  /usr/src/gnome-mastermind-0.3-X-src.tar.bz2
+  /usr/src/gnome-mastermind-0.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,19 +53,23 @@ Files included in the binary package:
   /etc/preremove/gnome-mastermind.sh
   /usr/bin/gnome-mastermind.exe
   /usr/share/applications/gnome-mastermind.desktop
-  /usr/share/doc/Cygwin/gnome-mastermind-0.2.README
-  /usr/share/doc/gnome-mastermind-0.2/ABOUT-NLS
-  /usr/share/doc/gnome-mastermind-0.2/AUTHORS
-  /usr/share/doc/gnome-mastermind-0.2/COPYING
-  /usr/share/doc/gnome-mastermind-0.2/COPYRIGHT
-  /usr/share/doc/gnome-mastermind-0.2/ChangeLog
-  /usr/share/doc/gnome-mastermind-0.2/INSTALL
-  /usr/share/doc/gnome-mastermind-0.2/NEWS
-  /usr/share/doc/gnome-mastermind-0.2/README
-  /usr/share/doc/gnome-mastermind-0.2/TODO
-  /usr/share/doc/gnome-mastermind-0.2/copyright-artwork
+  /usr/share/doc/Cygwin/gnome-mastermind-0.3.README
+  /usr/share/doc/gnome-mastermind-0.3/ABOUT-NLS
+  /usr/share/doc/gnome-mastermind-0.3/AUTHORS
+  /usr/share/doc/gnome-mastermind-0.3/COPYING
+  /usr/share/doc/gnome-mastermind-0.3/COPYRIGHT
+  /usr/share/doc/gnome-mastermind-0.3/ChangeLog
+  /usr/share/doc/gnome-mastermind-0.3/INSTALL
+  /usr/share/doc/gnome-mastermind-0.3/NEWS
+  /usr/share/doc/gnome-mastermind-0.3/README
+  /usr/share/doc/gnome-mastermind-0.3/TODO
+  /usr/share/doc/gnome-mastermind-0.3/copyright-artwork
+  /usr/share/gnome-mastermind/themes/fruit.svg
+  /usr/share/gnome-mastermind/themes/shapes.svg
+  /usr/share/gnome-mastermind/themes/simple-glossy.svg
   /usr/share/gnome-mastermind/themes/simple.svg
   /usr/share/gnome-mastermind/themes/star.svg
+  /usr/share/gnome-mastermind/themes/tango-flat.svg
   /usr/share/gnome-mastermind/themes/tango.svg
   /usr/share/gnome-mastermind/ui/ui.xml
   /usr/share/gnome/help/gnome-mastermind/C/figures/mainwindow.png
@@ -100,10 +104,16 @@ Files included in the binary package:
   /usr/share/icons/hicolor/32x32/apps/gnome-mastermind.svg
   /usr/share/icons/hicolor/48x48/apps/gnome-mastermind.svg
   /usr/share/icons/hicolor/scalable/apps/gnome-mastermind.svg
+  /usr/share/locale/ar/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/de/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/es/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/fr/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/id/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-mastermind.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/locale/sv/LC_MESSAGES/gnome-mastermind.mo
   /usr/share/omf/gnome-mastermind/gnome-mastermind-C.omf
   /usr/share/omf/gnome-mastermind/gnome-mastermind-fr.omf
@@ -113,6 +123,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.3-1 -----
+Version bump.
 
 ----- version 0.2-1 -----
 Version bump.
