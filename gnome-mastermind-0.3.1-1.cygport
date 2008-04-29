@@ -1,0 +1,7 @@
+inherit gnome2
+
+DESCRIPTION="GNOME Mastermind(TM) game"
+HOMEPAGE="http://www5.autistici.org/gnome-mastermind/"
+SRC_URI="http://download.gna.org/${PN}/${P}.tar.bz2"
+
+DOCS="copyright copyright-artwork"
