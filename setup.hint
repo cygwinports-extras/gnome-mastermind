@@ -1,4 +1,4 @@
 category: Games Gnome
-requires: cygwin GConf2 glib2 gtk2-x11 libcairo2 libintl8
+requires: cygwin libcairo2 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8
 sdesc: "GNOME Mastermind game"
 ldesc: "A Mastermind clone for GNOME Desktop"
